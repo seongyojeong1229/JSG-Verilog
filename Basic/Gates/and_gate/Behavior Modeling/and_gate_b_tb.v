@@ -12,11 +12,6 @@ module and_gate_b_tb;
     initial begin
         a = 0; b = 0;
         #50;
-    end
-    
-    initial begin
-        a = 0; b = 0;
-        #50;
         
         a = 0; b = 1;
         #50;
