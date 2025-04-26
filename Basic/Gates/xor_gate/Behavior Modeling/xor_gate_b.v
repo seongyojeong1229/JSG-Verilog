@@ -5,7 +5,7 @@ module xor_gate_b(
     );
 
     always @ (a, b) begin
-        y = ~(a | b);
+        y = a ^ b;
     end
 
 endmodule
