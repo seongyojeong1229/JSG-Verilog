@@ -10,16 +10,16 @@ module nor_gate_s_tb;
     );
 
     initial begin
-        a = 0; b = 0;
+        a = 1'b0; b = 1'b0;
         #50;
         
-        a = 0; b = 1;
+        a = 1'b0; b = 1'b1;
         #50;
         
-        a = 1; b = 0;
+        a = 1'b1; b = 1'b0;
         #50;
         
-        a = 1; b = 1;
+        a = 1'b1; b = 1'b1;
         #50;
         
         $finish;
