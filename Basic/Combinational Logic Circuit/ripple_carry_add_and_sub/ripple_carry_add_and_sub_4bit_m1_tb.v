@@ -10,9 +10,9 @@ module ripple_carry_add_and_sub_4bit_m1_tb;
         .a(a), 
         .b(b), 
         .c_in(c_in),
+        .M(M),
         .sum(sum), 
-        .c_out(c_out), 
-        .M(M)
+        .c_out(c_out)
     );
     
     initial begin
