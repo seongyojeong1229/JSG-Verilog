@@ -4,5 +4,6 @@ module not_gate_d(
     );
     
     assign b = ~a;
+
 endmodule
 

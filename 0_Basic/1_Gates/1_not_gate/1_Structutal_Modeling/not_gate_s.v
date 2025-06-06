@@ -4,5 +4,6 @@ module not_gate_s(
     );
     
     not(b,a);
+
 endmodule
 
