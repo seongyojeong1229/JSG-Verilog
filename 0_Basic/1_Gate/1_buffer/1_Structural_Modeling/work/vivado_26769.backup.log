@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Nov  8 17:52:22 2025
+# Process ID         : 26769
+# Current directory  : /home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/work
+# Command line       : vivado -source gen_rtl_schematic.tcl
+# Log file           : /home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/work/vivado.log
+# Journal file       : /home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/work/vivado.jou
+# Running On         : DESKTOP-KUORUP8
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.6 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400F
+# CPU Frequency      : 2496.001 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 8245 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10392 MB
+# Available Virtual  : 8461 MB
+#-----------------------------------------------------------
+start_gui
+source gen_rtl_schematic.tcl
+# create_project -in_memory -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/sg/tools/Xilinx/Vivado/2024.2/data/ip'.
+# read_verilog [ glob ../buffer_s.v ]
+# synth_design -top buffer_s -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -top buffer_s -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26933
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8059.527 ; gain = 404.766 ; free physical = 2433 ; free virtual = 6651
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'buffer_s' [/home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/buffer_s.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_s' (0#1) [/home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/buffer_s.v:1]
+WARNING: [Synth 8-3330] design buffer_s has an empty top module
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8129.465 ; gain = 474.703 ; free physical = 2357 ; free virtual = 6576
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8144.309 ; gain = 489.547 ; free physical = 2345 ; free virtual = 6564
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8144.309 ; gain = 489.547 ; free physical = 2345 ; free virtual = 6564
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8144.316 ; gain = 0.000 ; free physical = 2345 ; free virtual = 6564
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8201.238 ; gain = 0.000 ; free physical = 2495 ; free virtual = 6714
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 8459.258 ; gain = 804.496 ; free physical = 2245 ; free virtual = 6464
+8 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 8459.258 ; gain = 983.434 ; free physical = 2245 ; free virtual = 6464
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2140.464; main = 2140.464; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 8459.258; main = 8459.258; forked = 0.000
+# open_rtl_design -name rtl_1
+Design is defaulting to project part: xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8591.875 ; gain = 116.773 ; free physical = 1917 ; free virtual = 6136
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'buffer_s' [/home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/buffer_s.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'buffer_s' (0#1) [/home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/buffer_s.v:1]
+WARNING: [Synth 8-3330] design buffer_s has an empty top module
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8678.844 ; gain = 203.742 ; free physical = 1832 ; free virtual = 6052
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8678.844 ; gain = 203.742 ; free physical = 1832 ; free virtual = 6052
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8678.844 ; gain = 203.742 ; free physical = 1832 ; free virtual = 6052
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8678.852 ; gain = 0.000 ; free physical = 1832 ; free virtual = 6052
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8686.477 ; gain = 0.000 ; free physical = 1985 ; free virtual = 6204
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 17:53:03 2025...

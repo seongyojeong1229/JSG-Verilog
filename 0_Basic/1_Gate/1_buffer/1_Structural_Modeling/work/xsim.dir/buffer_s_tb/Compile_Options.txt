@@ -1,0 +1,1 @@
+--log "xelab.log" --debug "wave" -snapshot "buffer_s_tb" "work.buffer_s_tb" 

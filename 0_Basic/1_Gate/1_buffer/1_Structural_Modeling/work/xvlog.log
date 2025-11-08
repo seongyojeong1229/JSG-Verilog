@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/buffer_s_tb.v" into library work
+INFO: [VRFC 10-311] analyzing module buffer_s_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sg/JSG-Verilog/0_Basic/1_Gate/0_buffer/1_Structural_Modeling/buffer_s.v" into library work
+INFO: [VRFC 10-311] analyzing module buffer_s

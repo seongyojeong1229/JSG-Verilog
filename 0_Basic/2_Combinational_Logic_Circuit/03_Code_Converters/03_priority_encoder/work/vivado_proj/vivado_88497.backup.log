@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Nov  8 21:33:45 2025
+# Process ID         : 88497
+# Current directory  : /home/sg/JSG-Verilog/0_Basic/2_Combinational_Logic_Circuit/03_Code_Converters/03_priority_encoder/work/vivado_proj
+# Command line       : vivado -source open_rtl.tcl
+# Log file           : /home/sg/JSG-Verilog/0_Basic/2_Combinational_Logic_Circuit/03_Code_Converters/03_priority_encoder/work/vivado_proj/vivado.log
+# Journal file       : /home/sg/JSG-Verilog/0_Basic/2_Combinational_Logic_Circuit/03_Code_Converters/03_priority_encoder/work/vivado_proj/vivado.jou
+# Running On         : DESKTOP-KUORUP8
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.6 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12400F
+# CPU Frequency      : 2496.001 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 8245 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 10392 MB
+# Available Virtual  : 8362 MB
+#-----------------------------------------------------------
+start_gui
+source open_rtl.tcl
+# open_project vivado_proj.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/sg/JSG-Verilog/0_Basic/2_Combinational_Logic_Circuit/03_Code_Converters/03_priority_encoder/work/vivado_proj/vivado_proj.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/sg/tools/Xilinx/Vivado/2024.2/data/ip'.
+# open_elaborated_design
+invalid command name "open_elaborated_design"
+    while executing
+"open_elaborated_design"
+    (file "open_rtl.tcl" line 4)
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: priority_encoder
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 88739
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 8215.496 ; gain = 427.797 ; free physical = 3102 ; free virtual = 6477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'priority_encoder' [/home/sg/JSG-Verilog/0_Basic/2_Combinational_Logic_Circuit/03_Code_Converters/03_priority_encoder/priority_encoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'priority_encoder' (0#1) [/home/sg/JSG-Verilog/0_Basic/2_Combinational_Logic_Circuit/03_Code_Converters/03_priority_encoder/priority_encoder.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8277.465 ; gain = 489.766 ; free physical = 3029 ; free virtual = 6407
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8292.309 ; gain = 504.609 ; free physical = 3017 ; free virtual = 6395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8292.309 ; gain = 504.609 ; free physical = 3017 ; free virtual = 6395
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8292.316 ; gain = 0.000 ; free physical = 3017 ; free virtual = 6395
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8364.113 ; gain = 0.000 ; free physical = 3146 ; free virtual = 6537
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 8547.727 ; gain = 760.027 ; free physical = 2914 ; free virtual = 6312
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 8547.727 ; gain = 889.582 ; free physical = 2914 ; free virtual = 6312
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2165.852; main = 2165.852; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 8547.727; main = 8547.727; forked = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 21:36:06 2025...
