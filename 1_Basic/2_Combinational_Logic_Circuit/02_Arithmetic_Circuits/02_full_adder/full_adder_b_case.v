@@ -6,11 +6,8 @@ module full_adder_b_case(
     output reg cout
     );
     
-    wire [2:0] temp;
-    assign temp = {a, b, cin};
-    
-    always @(temp) begin
-        case (temp)
+    always @(a, b, cin) begin
+        case ({a, b, cin})
             3'b000 : begin
                 sum = 1'b0;
                 cout = 1'b0;

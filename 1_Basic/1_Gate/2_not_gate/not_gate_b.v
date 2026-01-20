@@ -3,8 +3,9 @@ module not_gate_b(
     output reg b
     );
     
-    always @(a)
+    always @(a) begin
         b = ~a;
+    end
 
 endmodule
 
