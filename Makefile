@@ -64,8 +64,9 @@ sim:
 	@cd $(WORK_DIR)/xsim && \
 	xvlog -sv $(TB_FILE) $(DESIGN_FILES) && \
 	xelab --debug wave -snapshot $(TB_MODULE) work.$(TB_MODULE) && \
-	echo "add_wave /" > run.tcl && \
-	echo "run 1000ns" >> run.tcl && \
+	echo "log_wave -recursive /" > run.tcl && \
+	echo "add_wave /" >> run.tcl && \
+	echo "run -all" >> run.tcl && \
 	xsim $(TB_MODULE) -gui -wdb $(TB_MODULE).wdb -tclbatch run.tcl
 
 # --- 5. RTL Analysis (Elaboration) ---
@@ -79,7 +80,7 @@ rtl:
 	echo "set_property top $(DESIGN_TOP_MODULE) [get_filesets sources_1]" >> run.tcl && \
 	echo "open_elaborated_design" >> run.tcl && \
 	vivado -mode gui -source run.tcl
-
+	
 # --- 6. Synthesis ---
 synth:
 	@if [ -z "$(DESIGN_FILES)" ]; then echo "Error: No Design files found!"; exit 1; fi
